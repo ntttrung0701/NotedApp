@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myViewModel"
+            type="com.example.appquizlet.model.MyViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
+        android:paddingBottom="0dp"
+        tools:context=".QuoteInLanguage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerWrap"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:gravity="start"
+                android:paddingHorizontal="@dimen/md"
+                app:drawableStartCompat="@drawable/left_arrow_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTitleQuotify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="QUOTIFY"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtSaved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/mar_10"
+                    app:drawableStartCompat="@drawable/saved_white" />
+
+                <TextView
+                    android:id="@+id/txtCreateNewQuote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/mar_10"
+                    app:drawableStartCompat="@drawable/icons8_plus_48_white" />
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/search_view"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginHorizontal="@dimen/mar_15"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/headerWrap"-->
+<!--            android:hint="@string/search_hint_quote"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            android:layout_marginTop="@dimen/mar_15"-->
+<!--            app:closeIcon="@drawable/icons8_close_48"-->
+<!--            app:defaultQueryHint="@string/search_hint_quote"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:queryHint="@string/search_hint_quote"-->
+<!--            app:useDrawerArrowDrawable="true" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuote"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:paddingHorizontal="@dimen/mar_15"
+            app:layout_constraintBottom_toTopOf="@+id/layoutNext"
+            app:layout_constraintTop_toBottomOf="@+id/headerWrap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtPrevQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onPrevious"
+                android:text="PREVIOUS"
+                android:textColor="#80FFFFFF"
+                android:textSize="18sp"
+                app:drawableStartCompat="@drawable/left_arrow"
+                app:drawableTint="#80FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtNextQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onNext"
+                android:text="NEXT"
+                android:textColor="#80FFFFFF"
+                android:textSize="18sp"
+                app:drawableEndCompat="@drawable/forward_32"
+                app:drawableTint="#80FFFFFF" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

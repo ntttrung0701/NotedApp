@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardSolutionItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mar_10"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/bg_flashcard"
+    app:cardCornerRadius="@dimen/pad_20"
+    app:cardElevation="@dimen/pad_5"
+    app:elevation="@dimen/mar_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/pad_30"
+        android:paddingVertical="@dimen/pad_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_primary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/description_24px" />
+
+            <TextView
+                android:id="@+id/txtStudySetSearchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/title_margin_start"
+                android:text="Everyday words"
+                android:textColor="@color/txt_black_in_card"
+                android:textSize="@dimen/text_size_primary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--            <com.google.android.material.chip.Chip-->
+        <!--                android:id="@+id/studySetChip"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="@dimen/chip_height"-->
+        <!--                android:text="5 terms"-->
+        <!--                app:chipCornerRadius="@dimen/chipRadius" />-->
+
+        <TextView
+            android:id="@+id/studySetChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/txt_black_in_card"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_primary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgStudySetAvatar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/txtStudySetUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:text="TextView"
+                android:textColor="@color/txt_black_in_card" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

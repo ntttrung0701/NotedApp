@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile"
+    tools:context=".CreateSet">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/txt_black_in_card"
+        app:popupTheme="@style/Theme.AppQuizlet.PopupOverlay"
+        app:title="@string/create_set"
+        app:titleTextColor="@color/txt_black_primary">
+
+        <ImageView
+            android:id="@+id/iconTickCreateSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icons8_tick_24" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iconSetting"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:src="@drawable/ic_setting" />-->
+
+
+        <ImageView
+            android:id="@+id/iconImportFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/resource_import" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border_bottom_only"
+                android:hint="@string/hint_create_set"
+                app:boxBackgroundMode="none"
+                app:boxStrokeWidth="@dimen/marginInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNameStudySet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black_primary" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pad_5"
+                android:layout_marginTop="@dimen/marginInput"
+                android:text="@string/title"
+                android:textAllCaps="true"
+                android:textColor="@color/txt_black_primary"
+                android:textSize="@dimen/titleSizeCard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_only"
+                android:hint="@string/desc_optional"
+                app:boxBackgroundMode="none"
+                app:boxStrokeWidth="@dimen/marginInput">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pad_5"
+                android:layout_marginTop="@dimen/marginInput"
+                android:text="@string/description"
+                android:textAllCaps="true"
+                android:textSize="@dimen/titleSizeCard" />
+        </LinearLayout>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/layoutScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal"
+            app:justifyContent="center">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/txtScan"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/text_margin"-->
+            <!--                android:layout_marginTop="@dimen/marginInput"-->
+            <!--                android:drawablePadding="@dimen/pad_5"-->
+            <!--                android:text="@string/scan_doc"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:textColor="@color/txt_blue"-->
+            <!--                android:textSize="@dimen/titleSize"-->
+            <!--                app:drawableStartCompat="@drawable/icons8_plus_48_blue" />-->
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_5"
+                android:layout_marginBottom="@dimen/pad_5"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/pad_5"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textColor="@color/txt_blue_2"
+                android:textSize="@dimen/titleSize"
+                app:drawableStartCompat="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/txtHideDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mar_10"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:layout_marginBottom="@dimen/mar_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/pad_5"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textColor="@color/txt_blue_2"
+                android:textSize="@dimen/titleSize"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/minus_circle" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutNest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/createSetScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="2dp">
+
+            <LinearLayout
+                android:id="@+id/layoutFlashcardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:longClickable="true"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RvCreateSets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/pad_20" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <!--on below line we are creating a settings fab
+            and setting its visibility to gone-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addNewCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/create_card"
+            android:src="@drawable/icons8_plus_48" />
+
+    </LinearLayout>
+
+</RelativeLayout>

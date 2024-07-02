@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_activity">#333B3E</color>
+    <color name="bg_card_secondary">#3E555E</color>
+    <color name="bg_card_achievement">#ACBCB1</color>
+    <color name="color_text_achievement_blue">#ff0099cc</color>
+    <color name="bg_card_achievement_azure">#242424</color>
+    <color name="txt_white_in_btn">#FFFFFFFF</color>
+    <color name="txt_black_primary">#FFFFFF</color>
+    <color name="txt_blue">#B68FA2</color>
+    <color name="btn_primary">#5472AE</color>
+    <color name="txt_excellent_gray">#FFFFFF</color>
+    <color name="bg_card_test_card">#FF018786</color> <!--mã màu background ở trong card-->
+    <color name="txt_delete_teal">#FF018786</color> <!--mã màu cho nut delete-->
+    <color name="bg_azure">#C1CDCD</color>
+    <color name="nice_job_green">#00FF00</color> <!--mã màu background cho dialog trả lời đúng ở trong custom review correct-->
+    <color name="bg_review_wrong">#FF0033</color> <!--mã màu background cho dialog trả lời sai-->
+    <color name="title_app_name_home">#FFFFFFFF</color> <!--mã màu text appname ở trong Home-->
+    <color name="txt_black_in_card">#FFFFFFFF</color> <!--mã màu text ở trên folder, set-->
+    <color name="bg_flashcard">#ACBCB1</color> <!--mã màu background cho flashcard-->
+    <color name="bg_home">#ACBCB1</color>
+    <color name="bg_card_setting">#3E555E</color>
+    <color name="txt_color_rank">#FFFFFF</color>
+    <color name="txt_date">#FFFFFF</color>
+    <color name="button_premium_color">#3E555E</color>
+    <color name="dialog_bg">#3E555E</color>
+    <color name="bg_translate">#242424</color>
+    <color name="my_status_color">#ACBCB1</color>
+    <color name="bg_tab">#FF018786</color>
+    <color name="txt_black_flashcard">#3E555E</color>
+
+
+
+
+</resources>

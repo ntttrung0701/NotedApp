@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "298299838306",
+    "project_id": "pushnotification-fabf9",
+    "storage_bucket": "pushnotification-fabf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298299838306:android:ba85b8c7e975890926a63b",
+        "android_client_info": {
+          "package_name": "com.example.appquizlet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBybZsY0xh9isa4doQnGsvsFmucNb3pKrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298299838306:android:ba85b8c7e975890926a63b",
+        "android_client_info": {
+          "package_name": "com.example.appquizlet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBybZsY0xh9isa4doQnGsvsFmucNb3pKrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

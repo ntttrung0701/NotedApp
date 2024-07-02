@@ -1,0 +1,27 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppQuizlet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/my_yellow</item>
+        <item name="android:textColor">@color/txt_black_primary</item>
+
+        <!-- Dark variant of the primary color, used for status bar, app bar, etc. -->
+        <item name="colorPrimaryDark">@color/my_status_color</item>
+
+        <!-- Style for the toolbar. -->
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+    </style>
+
+    <style name="ScreenBackground">
+        <item name="backgroundColor">@color/black_gray</item>
+    </style>
+
+    <style name="CardBackground">
+        <item name="backgroundColor">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

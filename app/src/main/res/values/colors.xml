@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_gray">#424242</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_blue">#0000FF</color>
+    <color name="my_gray">#808080</color>
+    <color name="my_cyan">#00FFFF</color>
+    <color name="my_yellow">#FFFF00</color>
+    <color name="my_azure">#C1CDCD</color>
+    <color name="my_light_gray">#C1CDCD</color>
+    <color name="my_dark_slate_gray1">#97FFFF</color>
+    <color name="my_alice_blue">#F0F8FF</color>
+    <color name="my_primary_color">#6699FF</color>
+    <color name="light_gray">#CCCCCC</color>
+    <color name="semi_blue">#00C6FF</color>
+    <color name="my_red">#FF0033</color>
+    <color name="my_red_snackbar">#FF3333</color>
+    <color name="my_green">#00FF00</color>
+    <color name="my_moccasin">#FFE4B5</color>
+    <color name="my_papaya">#FFEFD5</color>
+    <color name="my_pink">#FFB6C1</color>
+
+    <color name="light_blue">#C1E8FF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="dialog_text">#37966f</color>
+
+
+    <color name="bg_activity">#F0F8FF</color>  <!--mã màu background activity-->
+    <color name="bg_card_secondary">#FFFFFFFF</color>  <!--mã màu background card-->
+    <color name="bg_card_achievement">#FFEFD5</color>  <!--mã màu background achievement-->
+    <color name="color_text_achievement_blue">#ff0099cc</color>  <!--mã màu text in achievement-->
+    <color name="bg_card_achievement_azure">#C1CDCD</color> <!--mã màu background contains achievements-->
+    <color name="txt_white_in_btn">#FFFFFFFF</color> <!--mã màu color in custom button-->
+    <color name="txt_black_primary">#FF000000</color><!--mã màu primary text-->
+    <color name="txt_blue">#405AEC</color> <!--mã màu text kiểu ViewAll , ...-->
+    <color name="txt_blue_2">#1D5898</color> <!--mã màu text kiểu ViewAll , ...-->
+    <color name="txt_blue_primary">#6699FF</color>
+    <color name="btn_primary">#6699FF</color>  <!--mã màu background mau xanh cho button ...-->
+    <color name="txt_excellent_gray">#707070</color> <!--mã màu text in modes ...-->
+    <color name="bottom_nav">#FFFFFFFF</color> <!--mã màu cho bottom navigation-->
+    <color name="bg_card_test_card">#FFFFFFFF</color> <!--mã màu background ở trong card-->
+    <color name="txt_delete_teal">#FF018786</color> <!--mã màu cho nut delete-->
+    <color name="bg_azure">#C1CDCD</color>
+    <color name="nice_job_green">#00FF00</color> <!--mã màu background cho dialog trả lời đúng ở trong custom review correct-->
+    <color name="bg_review_wrong">#FF0033</color> <!--mã màu background cho dialog trả lời sai-->
+    <color name="title_app_name_home">#FFFFFFFF</color> <!--mã màu text appname ở trong Home-->
+    <color name="txt_black_in_card">#FF000000</color> <!--mã màu text ở trên folder, set-->
+    <color name="bg_flashcard">#FFFFFFFF</color> <!--mã màu background cho flashcard-->
+    <color name="bg_home">#FFFFFFFF</color> <!--mã màu background cho flashcard-->
+    <color name="bg_card_setting">#FFFFFFFF</color> <!--mã màu background cho flashcard-->
+    <color name="txt_color_rank">#FFFF00</color>
+    <color name="txt_date">#424242</color>
+    <color name="button_premium_color">#FFFF00</color>
+    <color name="dialog_bg">#FFFFFF</color>
+    <color name="bg_translate">#FFFFFF</color>
+    <color name="my_status_color">#FFFFFF</color>
+    <color name="bg_tab">#F0F8FF</color>
+    <color name="txt_black_flashcard">#FF000000</color>
+
+
+
+</resources>
+

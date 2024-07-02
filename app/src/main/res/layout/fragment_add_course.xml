@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_course_bottomsheet"
+    tools:context=".FragmentAddCourse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerWrap"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtCloseIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/icons8_close_48"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/md"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/md"
+            android:text="@string/add_course"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"
+            android:textColor="@color/txt_black_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_60"
+        android:padding="@dimen/pad_20"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutAutoSchool"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="School name"
+            app:boxBackgroundMode="outline"
+           >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/icons8_university_campus_32"
+                android:drawablePadding="@dimen/mar_10"
+                android:inputType="text"
+                android:padding="@dimen/mar_10"
+                android:textColorHint="@color/txt_black_primary"
+                android:completionThreshold="1"
+                app:simpleItems="@array/academy_autocomple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/mar_10"
+            android:layout_weight="1"
+            android:hint="@string/course_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCourseName"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/icons8_books_64__1_"
+                android:drawablePadding="@dimen/mar_10"
+                android:textColorHint="@color/txt_black_primary"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDoneCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_primary"
+        android:text="@string/done"
+        android:layout_gravity="bottom"
+        android:textColor="@color/txt_white_in_btn"
+        android:layout_margin="@dimen/mar_30"/>
+
+</FrameLayout>

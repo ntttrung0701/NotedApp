@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <item android:id="@+id/menu_edit_wrapper"
+     android:icon="@drawable/icons8_menu_vertical_24__1_"
+     app:showAsAction="always"
+     android:title="">
+     <menu>
+         <item
+             android:id="@+id/option_edit"
+             android:icon="@drawable/icons8_edit_24"
+             android:title="@string/edit" />
+         <item
+             android:id="@+id/option_add_sets"
+             android:icon="@drawable/icons8_plus_48"
+             android:title="@string/add_set" />
+         <item
+             android:id="@+id/option_share"
+             android:icon="@drawable/icons8_share_24"
+             android:title="@string/share" />
+         <item
+             android:id="@+id/option_delete"
+             android:icon="@drawable/icons8_delete_24"
+             android:title="@string/delete" />
+     </menu>
+ </item>
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/pad_20"
+    android:paddingVertical="@dimen/mar_10"
+    tools:context=".FragmentSortTerm">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/mar_15"
+        android:text="@string/sort_term"
+        android:textColor="@color/txt_black_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/txtOriginalSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mar_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/in_original_order"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageTick1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/txt_black_primary"
+            android:src="@drawable/icons8_tick_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txtAlphabetically"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/alphabetically"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iconTick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/icons8_tick_24"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

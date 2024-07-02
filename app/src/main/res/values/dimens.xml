@@ -1,0 +1,48 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="corner_home">80dp</dimen>
+    <dimen name="corner_0">0dp</dimen>
+    <dimen name="corner_5">5dp</dimen>
+    <dimen name="marginInput">5dp</dimen>
+    <dimen name="margin_primary">10dp</dimen>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="titleSizeCard">16sp</dimen>
+    <dimen name="titleSizeCard2">14sp</dimen>
+    <dimen name="md">16dp</dimen>
+    <dimen name="height">400dp</dimen>
+    <dimen name="dimen32">32dp</dimen>
+    <dimen name="chip_height">36dp</dimen>
+    <dimen name="chipRadius">3dp</dimen>
+    <dimen name="pad_hoz_20">20dp</dimen>
+    <dimen name="pad_ver_30">30dp</dimen>
+    <dimen name="mar_30">30dp</dimen>
+    <dimen name="text_size_primary">18sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="title_margin_start">6dp</dimen>
+    <dimen name="h_200">200dp</dimen>
+    <dimen name="h_250">250dp</dimen>
+    <dimen name="h_230">230dp</dimen>
+    <dimen name="h_300">300dp</dimen>
+    <dimen name="pad_20">20dp</dimen>
+    <dimen name="pad_30">30dp</dimen>
+    <dimen name="pad_60">60dp</dimen>
+    <dimen name="mar_10">10dp</dimen>
+    <dimen name="mar_15">15dp</dimen>
+    <dimen name="pad_5">5dp</dimen>
+    <dimen name="mar_60">60dp</dimen>
+    <dimen name="mar_80">80dp</dimen>
+    <dimen name="max_length_leader_board">10</dimen>
+    <dimen name="heightFlashcardLearn">500dp</dimen>
+    <dimen name="badge_size">3dp</dimen>
+    <dimen name="badge_text_size">12sp</dimen>
+
+
+    <dimen name="default_stack_spacing">12dp</dimen>
+    <dimen name="margin_fab">16dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_swipestack">64dp</dimen>
+    <dimen name="elevation_normal">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+</resources>

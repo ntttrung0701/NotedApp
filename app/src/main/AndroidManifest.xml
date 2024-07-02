@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <!--
+ Required only if your app needs to access audio files
+         that other apps created.
+    -->
+    <queries>
+        ...
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".QuoteApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppQuizlet"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="31">
+        <activity
+            android:name=".SearchQuoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyQuote"
+            android:exported="false" />
+        <activity
+            android:name=".CreateQuote"
+            android:exported="false" />
+        <activity
+            android:name=".QuoteInLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".ViewImage"
+            android:exported="false"
+            android:label="@string/title_activity_view_image"
+            android:theme="@style/Theme.AppQuizlet" />
+
+        <receiver
+            android:name=".BroadcastReceiver.DownloadSuccessReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="PDF_DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".QuizletPlus"
+            android:exported="false" />
+        <activity
+            android:name=".TranslateActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr,langid" />
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bell" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/my_primary_color" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".RankLeaderBoard"
+            android:exported="false" />
+        <activity
+            android:name=".SearchDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeEmail"
+            android:exported="false" />
+        <activity
+            android:name=".SearchNoLogin"
+            android:exported="false" />
+        <activity
+            android:name=".DeepLinkShareStudySet"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ttcs_quizlet.com"
+                    android:pathPrefix="/studyset/{uniqueIdentifier}"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ttcs_quizlet.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeepLinkShareFolder"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ttcs_quizlet.com"
+                    android:pathPrefix="/folder/{uniqueIdentifier}"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.ttcs_quizlet.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Achievement"
+            android:exported="false" />
+        <activity
+            android:name=".Change_Password"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeToLearn"
+            android:exported="false" />
+        <activity
+            android:name=".Excellent"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewLearn"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeTheme"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".EditStudySet"
+            android:exported="false" />
+        <activity
+            android:name=".FlashcardAddSetToFolder"
+            android:exported="false" />
+        <activity
+            android:name=".AddSetToFolder"
+            android:exported="false" />
+        <activity
+            android:name=".NoDataFound"
+            android:exported="false" />
+        <activity
+            android:name=".AddClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlashcardLearn"
+            android:exported="false" />
+        <activity
+            android:name=".StudySetDetail"
+            android:exported="false" />
+        <activity
+            android:name=".FolderClickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateSet"
+            android:exported="false"
+            android:label="@string/title_activity_create_set"
+            android:theme="@style/Theme.AppQuizlet" />
+        <activity
+            android:name=".NotFound"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Course"
+            android:exported="false"
+            android:label="@string/title_activity_add_course"
+            android:theme="@style/Theme.AppQuizlet.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_Logged_In"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SplashSearch"
+            android:exported="false"
+            android:label="@string/title_activity_splash_search"
+            android:theme="@style/Theme.AppQuizlet" /> <!-- <activity -->
+        <!-- android:name=".splash_search" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".BroadcastReceiver.AlarmReceiver" />
+    </application>
+
+</manifest>

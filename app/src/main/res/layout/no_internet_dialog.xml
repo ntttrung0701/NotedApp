@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        app:cardBackgroundColor="#90C9DB"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_above="@+id/shapeDivider"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginBottom="120dp"-->
+<!--                android:layout_toStartOf="@+id/birdIcon"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:src="@drawable/cloud_icon_01" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/lineIcon"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_toEndOf="@id/birdIcon"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:src="@drawable/cloud_icon_02" />-->
+<!--            </LinearLayout>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/lineIcon"-->
+<!--                android:layout_marginEnd="-30dp"-->
+<!--                android:layout_marginBottom="-20dp"-->
+<!--                android:layout_toStartOf="@+id/birdIcon"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:src="@drawable/cloud_icon_03" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/lineIcon"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/shapeDivider"-->
+<!--                android:layout_marginStart="-100dp"-->
+<!--                android:layout_marginEnd="-100dp"-->
+<!--                android:layout_marginBottom="80dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:src="@drawable/line_icon" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/birdIcon"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/shapeDivider"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginBottom="80dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:src="@drawable/mic_24px" />-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/shapeDivider"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:adjustViewBounds="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/shape" />&ndash;&gt;-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/shapeDivider"-->
+<!--                android:background="#FFFFFF">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/noInternetTitle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="No Internet Connection"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_above="@+id/retryBtn"-->
+<!--                    android:layout_below="@+id/noInternetTitle"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:lineSpacingExtra="8dp"-->
+<!--                    android:text="You are not connected to the internet.\nMake sure wifi is on, internet is on, Airplane mode is off and try again."-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/retryBtn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginBottom="30dp"-->
+<!--                    android:background="@drawable/round_back_stroke"-->
+<!--                    android:paddingStart="80dp"-->
+<!--                    android:paddingEnd="80dp"-->
+<!--                    android:text="Retry"-->
+<!--                    android:textColor="#324460" />-->
+<!--            </RelativeLayout>-->
+<!--        </RelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+</RelativeLayout>

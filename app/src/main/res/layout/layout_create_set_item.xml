@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mar_10"
+    app:cardBackgroundColor="@color/bg_card_secondary"
+    app:cardCornerRadius="@dimen/pad_20"
+    app:cardElevation="@dimen/pad_5"
+    app:elevation="@dimen/mar_10">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipeRevealLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corner"
+        android:longClickable="true"
+        android:orientation="horizontal"
+        app:dragEdge="left"
+        app:revealMode="same_level">
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="@dimen/h_200"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/bg_activity"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/pad_20"
+                android:src="@drawable/icons8_delete_24" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/bg_card_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/studySetCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_secondary"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/pad_30"
+                android:paddingVertical="@dimen/pad_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_primary"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/description_24px" />
+
+                    <TextView
+                        android:id="@+id/txtStudySetTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/title_margin_start"
+                        android:text="Everyday words"
+                        android:textColor="@color/txt_black_in_card"
+                        android:textSize="@dimen/text_size_primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/studySetChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/chip_height"
+                    android:text="5 terms"
+                    app:chipCornerRadius="@dimen/chipRadius" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_primary"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgStudySetAvatar"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/owl_default_avatar"
+                        app:civ_border_color="@color/my_alice_blue"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/txtStudySetUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        android:textColor="@color/txt_black_in_card" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</androidx.cardview.widget.CardView>
+

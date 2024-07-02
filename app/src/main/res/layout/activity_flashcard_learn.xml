@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashcardLearn">
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.AppQuizlet.PopupOverlay"
+        app:title="">
+
+        <ImageView
+            android:id="@+id/iconClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icons8_close_48" />
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3/113"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/learnIconSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_setting" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Flashcard Container -->
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
+    <!--        android:id="@+id/viewPager"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/toolbar" />-->
+
+    <!--    <com.example.appquizlet.model.SwiperStack-->
+    <!--        android:id="@+id/swipeStack"-->
+    <!--        android:layout_width="350dp"-->
+    <!--        android:layout_height="520dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="35dp"-->
+    <!--        android:layout_marginTop="78dp"-->
+    <!--        android:padding="30dp" />-->
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/swipeStack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/pad_20"
+        android:layout_marginVertical="?attr/actionBarSize"
+        tools:listitem="@layout/layout_flashcard_study" />
+
+    <LinearLayout
+        android:id="@+id/layoutLearnedFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="104dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="excellent.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/good_job"
+            android:textStyle="bold"
+            android:textColor="#707070"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="#707070"
+            android:layout_marginHorizontal="@dimen/pad_30"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/you_learn_all" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoHome"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mar_10"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/learn_other_set" />
+    </LinearLayout>
+
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circleIndicator3Learn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:ci_drawable="@drawable/backgroud_indicator3" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/learnBottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/pad_20">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_black_primary"
+            android:src="@drawable/undo_24px" />
+
+        <!-- Navigation Buttons -->
+        <TextView
+            android:id="@+id/txtDescTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/txt_black_primary"
+            android:text="@string/tab_to_flip"
+            android:textSize="14sp" />
+
+        <!-- Zoom In/Out Button (Optional) -->
+        <ImageView
+            android:id="@+id/iconAutoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_black_primary"
+            android:src="@drawable/autoplay_24px" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

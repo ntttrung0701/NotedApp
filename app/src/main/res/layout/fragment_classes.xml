@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile"
+    android:id="@+id/fragmentClasses"
+    android:padding="@dimen/pad_60"
+    tools:context=".Classes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgFolderItemAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_200"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_profile"
+            app:srcCompat="@drawable/addgroupbg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mar_30"
+            android:paddingHorizontal="@dimen/pad_30"
+            android:text="@string/class_add_group"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/txt_black_primary"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCreateClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary"
+            android:text="@string/create_a_class"
+            android:paddingHorizontal="@dimen/pad_60"
+            android:layout_gravity="center"
+            android:textColor="@color/txt_white_in_btn" />
+
+    </LinearLayout>
+
+</FrameLayout>

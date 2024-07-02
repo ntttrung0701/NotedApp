@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_white_conner_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".Change_username">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_yellow_conner_16_topleft_topright"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="Change Username"
+        android:textColor="#3A3737"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To confirm it's really you, please authenticate with your Quizlet password."
+            android:textColor="#3A3737"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edt_change_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_white_conner_10_boder_gray"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send_change_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_blue_conner_10"
+            android:layout_marginBottom="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_change_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_conner_10" />
+    </LinearLayout>
+
+
+</LinearLayout>

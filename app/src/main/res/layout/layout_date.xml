@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtDayWeek"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginBottom="@dimen/mar_10"-->
+    <!--        android:text="12"-->
+    <!--        android:textSize="14sp" />-->
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFire"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+             />
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignBottom="@+id/imgFire"
+            android:text="12"
+            android:textColor="@color/txt_date"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_study_set_wrapper"
+        android:icon="@drawable/icons8_menu_vertical_24__1_"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/option_add_to_folder"
+                android:icon="@drawable/icons8_folder_24_00001"
+                android:title="@string/add_to_folder" />
+            <item
+                android:id="@+id/option_share"
+                android:icon="@drawable/icons8_share_24"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/option_edit"
+                android:icon="@drawable/icons8_edit_24"
+                android:title="@string/edit" />
+        </menu>
+    </item>
+</menu>

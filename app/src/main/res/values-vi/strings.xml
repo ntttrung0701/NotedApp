@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">AppQuizlet</string>
+        <string name="name">Quizlet</string>
+        <!--    Splash and sign in, sign up-->
+        <string name="title_activity_splash_search">SplashSearch</string>
+        <string name="splash_text1">Hơn 90% sinh viên sử dụng Quizlet báo cáo điểm cao hơn</string>
+        <string name="splash_text2">Tìm kiếm hàng triệu bộ thẻ flashcard</string>
+        <string name="splash_text3">Học theo bốn cách khác nhau và mọi nơi</string>
+        <string name="splash_text4">Tùy chỉnh flashcards theo nhu cầu chính xác của bạn</string>
+
+        <string name="or_log_with">Đăng nhập nhanh với</string>
+        <string name="or_sign_up_with">Đăng ký nhanh với</string>
+        <string name="or_log_with_email">Hoặc Đăng nhập bằng email của bạn</string>
+        <string name="email_add">Địa chỉ Email</string>
+        <string name="or_sign_up_email">Hoặc Đăng ký bằng email của bạn</string>
+        <string name="email_or_username">Email hoặc tên người dùng</string>
+        <string name="sign_up_for_free">Đăng ký miễn phí</string>
+        <string name="or_log_in">Hoặc Đăng nhập</string>
+        <string name="dob">Ngày sinh</string>
+        <string name="password">Mật khẩu</string>
+        <string name="sign_up">Đăng ký</string>
+        <string name="log_in">Đăng nhập</string>
+        <string name="gg">Google</string>
+        <string name="fb">Facebook</string>
+        <string name="select_dob">Chọn ngày sinh của bạn</string>
+        <string name="email_hint">email@example.com</string>
+        <string name="pass_hint">*********</string>
+        <string name="forgot_u_p">Quên tên người dùng hoặc mật khẩu?</string>
+        <string name="terms_of_service">Bằng cách đăng ký, tôi chấp nhận Điều khoản Dịch vụ và Chính sách Riêng tư của Quizlet</string>
+        <string name="forgot_username">Quên tên người dùng</string>
+        <string name="reset_password">Đặt lại mật khẩu của bạn</string>
+        <string name="forgot_pass_text">Nhập tên người dùng hoặc địa chỉ email bạn đã đăng ký. Chúng tôi sẽ gửi cho bạn một liên kết để đăng nhập và đặt lại mật khẩu của bạn</string>
+        <string name="hello_blank_fragment">Xin chào, đoạn trắng</string>
+
+        <!--    Logged In-->
+        <string name="li_home">Trang chủ</string>
+        <string name="li_solution">Giải pháp</string>
+        <string name="li_library">Thư viện</string>
+        <string name="li_profile">Hồ sơ</string>
+
+        <!--    Profile-->
+        <string name="pf_upgrade">Nâng cấp</string>
+        <string name="pf_your_equipment">Cài đặt của bạn</string>
+        <string name="pf_achievement">Thành tựu</string>
+        <string name="pf_your_courses">Các khóa học của bạn</string>
+        <string name="pf_achievement_quote">Học vào ngày mai để duy trì chuỗi học tập của bạn!</string>
+        <string name="view_all">Xem tất cả</string>
+
+        <string name="settings">Cài đặt</string>
+        <string name="account_type">Loại tài khoản</string>
+        <string name="free">Miễn phí</string>
+        <string name="btn_upgrade_free_trial">Nâng cấp: Dùng thử miễn phí</string>
+        <string name="add_course">Thêm khóa học</string>
+        <string name="change_pass">Đổi mật khẩu</string>
+        <string name="notification">Thông báo</string>
+        <string name="light_mode">Chế độ ban ngày</string>
+        <string name="always_on">Luôn bật</string>
+        <string name="always_off">Luôn tắt</string>
+        <string name="save_for_offline">Lưu bộ thẻ để sử dụng ngoại tuyến</string>
+        <string name="recent_sets">Các bộ thẻ gần đây sẽ không được tải xuống</string>
+        <string name="help_center">Trung tâm Trợ giúp</string>
+        <string name="about">Về chúng tôi</string>
+        <string name="version">Phiên bản</string>
+        <string name="log_out">Đăng xuất</string>
+        <string name="course">Khóa học</string>
+        <string name="add_course_text">Thêm một khóa học để chúng tôi có thể đưa đến bạn nội dung học tốt nhất</string>
+        <string name="title_activity_add_course">Thêm_Khóa_học</string>
+
+        <string name="lb_study_sets">Bộ thẻ học</string>
+        <string name="lb_folders">Thư mục</string>
+        <string name="folder">Thư mục</string>
+        <string name="lb_classes">Lớp học</string>
+        <string name="filter">Bộ lọc</string>
+        <string name="add_classes">Tạo lớp học</string>
+        <string name="add_study_set">Tạo bộ thẻ học</string>
+        <string name="add_folder">Tạo thư mục</string>
+
+        <string name="search_hint">Bộ thẻ học, sách giáo trình, câu hỏi</string>
+        <string name="free_trail">Thử nghiệm miễn phí</string>
+        <string name="not_in_course">Tôi không ở trong khóa học</string>
+
+        <string name="sl_title">Giải pháp chuyên gia</string>
+        <string name="sl_search_hint">Sách giáo trình, ISBN, câu hỏi</string>
+        <string name="search_splash">Tìm kiếm</string>
+        <string name="search_enter_topic">Nhập một chủ đề hoặc từ khóa</string>
+        <string name="search_tip">Mẹo: Càng chi tiết, càng tốt!</string>
+
+        <string name="oops">Xin lỗi!</string>
+        <string name="sth_went_wrong">Có điều gì đó không đúng</string>
+        <string name="go_to_home">Đi đến trang chủ</string>
+
+        <string name="errBlankEmail">Email là bắt buộc!</string>
+        <string name="errEmailInvalid">Email không hợp lệ</string>
+        <string name="errInsufficientLength">Mật khẩu quá yếu</string>
+
+        <string name="errBlankPass">Mật khẩu là bắt buộc!</string>
+        <string name="helper_email">Nhập email theo định dạng name@gmail.com</string>
+        <string name="helper_pass">Nhập ít nhất 6 ký tự</string>
+
+        <string name="hint_create_set">Chủ đề, chương, đơn vị</string>
+        <string name="title">Tiêu đề</string>
+        <string name="term">Thuật ngữ</string>
+        <string name="definition">Định nghĩa</string>
+        <string name="description">Mô tả</string>
+        <string name="create_set">Tạo bộ thẻ</string>
+        <string name="title_activity_create_set">Tạo_Bộ_thẻ</string>
+        <string name="create_card">Tạo thẻ mới</string>
+        <string name="folder_name">Tên thư mục</string>
+        <string name="desc_optional">Mô tả (Tùy chọn)</string>
+        <string name="create_class">Tạo lớp học</string>
+        <string name="scan_doc">Quét tài liệu</string>
+        <string name="all_caught_up">Bạn đã đuổi kịp tất cả</string>
+        <string name="ok">OK</string>
+
+        <string name="class_add_group">Nhóm tài liệu học để tiết kiệm thời gian và chia sẻ với các thành viên Quizlet khác</string>
+        <string name="create_a_class">Tạo một lớp học</string>
+
+        <!--    Menu option-->
+        <string name="edit">Chỉnh sửa</string>
+        <string name="add_set">Thêm bộ thẻ</string>
+        <string name="share">Chia sẻ</string>
+        <string name="delete">Xóa</string>
+        <string name="cancel">Hủy bỏ</string>
+        <string name="edit_folder">Chỉnh sửa thư mục</string>
+        <string name="delete_text">Bạn có chắc chắn muốn xóa thư mục này vĩnh viễn không? Các bộ thẻ bên trong sẽ không bị xóa</string>
+
+        <string name="course_name">Tên khóa học</string>
+        <string name="done">Hoàn thành</string>
+
+        <string name="login_success">Đăng nhập thành công 🍾</string>
+        <string name="failed_sign_up">Có lỗi xảy ra khi đăng ký! Vui lòng thử lại!</string>
+        <string name="sign_in_success">Đăng nhập tài khoản thành công 🍾</string>
+        <string name="wait">Đang tải. Vui lòng đợi…</string>
+        <string name="not_enough_age">Bạn chưa đủ tuổi để đăng ký!</string>
+        <string name="create_folder_success">Tạo thư mục thành công!</string>
+        <string name="creating">Đang tạo thư mục. Vui lòng đợi…</string>
+        <string name="create_study_set_success">Tạo bộ thẻ học thành công!</string>
+
+        <string name="wrong_email_or_pass">Email hoặc mật khẩu sai. Vui lòng thử lại!</string>
+        <string name="loginNameField">loginName</string>
+        <string name="loginPasswordField">loginPassword</string>
+        <string name="emailField">email</string>
+        <string name="dobField">dateOfBirth</string>
+        <string name="createFolderNameField">name</string>
+        <string name="descriptionField">description</string>
+
+        <string name="add_to_folder">Thêm vào Thư mục</string>
+        <string name="add_to_class">Thêm vào lớp học</string>
+        <string name="save_and_edit">Lưu và chỉnh sửa</string>
+        <string name="delete_set">Xóa bộ thẻ</string>
+
+        <string name="cards">Thẻ</string>
+        <string name="flashcards">FlashCards</string>
+        <string name="review_term">Xem xét các thuật ngữ và định nghĩa</string>
+        <string name="test">Kiểm tra</string>
+        <string name="take_a_practice">Làm bài kiểm tra thực hành</string>
+        <string name="study_this_set">Học bộ thẻ này</string>
+        <string name="tab_to_flip">Chạm vào thẻ để lật</string>
+        <string name="set_options">Tùy chọn bộ thẻ</string>
+
+        <!-- Strings used for fragments for navigation -->
+        <string name="first_fragment_label">Đoạn trả về đầu tiên</string>
+        <string name="second_fragment_label">Đoạn trả về thứ hai</string>
+        <string name="next">Tiếp theo</string>
+        <string name="previous">Trước đó</string>
+        <string name="language">Ngôn ngữ</string>
+        <string name="terms">Thuật ngữ</string>
+        <string name="select_language">Chọn ngôn ngữ</string>
+        <string name="definitions">Định nghĩa</string>
+        <string name="privacy">Quyền riêng tư</string>
+        <string name="visible_to">Hiển thị cho</string>
+        <string name="just_me">Chỉ mình tôi</string>
+        <string name="new_class">Lớp mới</string>
+        <string name="class_title">Tiêu đề lớp học</string>
+
+        <string name="updateLoadMes">Đang tải thư mục…</string>
+        <string name="deleteFolderSuccessful">Xóa thư mục thành công</string>
+        <string name="deleteFolderErr">Có lỗi xảy ra khi xóa thư mục. Vui lòng thử lại!</string>
+        <string name="deleteSetErr">Có lỗi xảy ra khi xóa bộ flashcard. Vui lòng thử lại!</string>
+        <string name="update_folder_success">Cập nhật thư mục thành công</string>
+        <string name="update_study_set_success">Cập nhật bộ flashcard thành công</string>
+        <string name="deleteFolderLoading">Đang xóa thư mục…</string>
+        <string name="deleteSetLoading">Đang xóa thư mục…</string>
+        <string name="created">Đã tạo</string>
+        <string name="studied">Đã học</string>
+        <string name="folders">Thư mục</string>
+        <string name="sortCard">Sắp xếp thẻ</string>
+        <string name="download">Tải về</string>
+        <string name="in_original_order">Theo thứ tự gốc</string>
+        <string name="alphabetically">Theo thứ tự chữ cái</string>
+        <string name="sort_term">Sắp xếp thuật ngữ</string>
+        <string name="edit_by">Có thể chỉnh sửa bởi</string>
+        <string name="delete_this_set">Bạn có chắc chắn muốn xóa bộ flashcard này vĩnh viễn?</string>
+        <string name="creatingStudySet">Đang tạo bộ flashcard</string>
+        <string name="allNewCards">Tất cả thẻ mới</string>
+        <string name="updating_study_set">Đang cập nhật bộ học …</string>
+        <string name="good_job">Tốt lắm!</string>
+        <string name="you_learn_all">Bạn đã học hết tất cả các flashcard trong bộ học này. Tiếp tục cố gắng nhé! 💪💪</string>
+        <string name="learn_other_set">Học bộ học khác</string>
+        <string name="quizlette">quizlette</string>
+        <string name="options">Tùy chọn</string>
+        <string name="shuffle">Trộn</string>
+        <string name="play_audio">Phát âm thanh</string>
+        <string name="card_orientation">Hướng thẻ</string>
+        <string name="reset_flashcard">Đặt lại flashcard</string>
+        <string name="no_data_found">Không tìm thấy dữ liệu!</string>
+        <string name="please_try_learn_other">Hiện tại, không có flashcard nào trong bộ học này. Hãy thử học bộ học khác</string>
+        <string name="there_no_set_in_folder">Không tìm thấy bộ học nào trong thư mục này</string>
+        <string name="no_set_found">Không có dữ liệu</string>
+        <string name="add_set_to_folder">Thêm bộ học vào thư mục này</string>
+        <string name="studyset_name_required">Tên bộ học là bắt buộc!</string>
+        <string name="this_field_cannot_empty">Trường này không thể để trống!</string>
+        <string name="remove_set_from_folder">Bộ học đã được loại khỏi thư mục này</string>
+        <string name="remove_set_folder_loading">Đang loại bỏ bộ học</string>
+        <string name="warning">Cảnh báo!</string>
+        <string name="confirm_remove_set_from_folder">Bạn có chắc chắn muốn xóa bộ học này khỏi thư mục không?</string>
+        <string name="accept">Chấp nhận</string>
+        <string name="confirm_delete_folder">Bạn có chắc chắn muốn xóa thư mục này không?</string>
+        <string name="deleteSetSuccessful">Xóa thư mục thành công</string>
+        <string name="confirm_delete_set">Bạn có chắc chắn muốn xóa bộ học này không?</string>
+        <string name="the_correct_answer_is">Câu trả lời đúng là: </string>
+        <string name="oops_incorrect">Ôi! Câu trả lời không đúng 🤔</string>
+        <string name="continue_to">Tiếp tục</string>
+        <string name="you_choose">Bạn đã chọn: </string>
+        <string name="nice_job">Làm tốt lắm 😍</string>
+        <string name="great_you_learn_well">Tuyệt vời! Bạn đã học rất tốt! Tiếp tục cố gắng 😊</string>
+        <string name="welcome_to_learn">Chào mừng bạn đến chế độ học</string>
+        <string name="this_mode_will">Chế độ này sẽ giúp bạn ôn tập tất cả các thẻ học trong bộ học</string>
+        <string name="let_go">Bắt đầu ngay</string>
+        <string name="learn_mode">Chế độ học</string>
+        <string name="download_app">Tải ứng dụng</string>
+        <string name="view_less">Xem ít hơn</string>
+        <string name="view_more">Xem thêm</string>
+        <string name="upload_avatar">Tải lên ảnh đại diện của bạn</string>
+        <string name="loading_data">Đang tải dữ liệu…</string>
+        <string name="no_available_in_preview">Chức năng này không khả dụng trong chế độ xem trước. Đăng ký hoặc đăng nhập để trải nghiệm chức năng này trong ứng dụng của tôi!</string>
+        <string name="sign_in">Đăng nhập</string>
+        <string name="upload_avatar_successful">Tải lên ảnh đại diện thành công!</string>
+        <string name="loading_data_successful">Tải dữ liệu thành công!</string>
+        <string name="public_set">Bộ học công cộng</string>
+        <string name="upload_avatar_loading">Đang thay đổi ảnh đại diện của bạn…</string>
+        <string name="upload_avatar_err">Có lỗi khi tải lên ảnh đại diện. Vui lòng thử lại!</string>
+        <string name="disable_public_set">Chuyển sang chế độ riêng tư</string>
+        <string name="privating_set">Chuyển bộ này thành chế độ riêng tư</string>
+        <string name="publishing_set">Chuyển bộ này thành chế độ công cộng</string>
+        <string name="set_is_public">Bộ này là công cộng</string>
+        <string name="set_is_private">Bộ này là riêng tư</string>
+        <string name="search_success">Tìm kiếm thành công</string>
+        <string name="searching_set">Đang tìm kiếm bộ học...</string>
+        <string name="sets">Bộ học</string>
+        <string name="all_results">Tất cả kết quả</string>
+        <string name="user">Người dùng</string>
+        <string name="no_set_user_found">Không tìm thấy bộ học hoặc người dùng nào. Vui lòng thử tìm bộ học hoặc người dùng khác!</string>
+        <string name="no_set_search_found">Không tìm thấy bộ học nào với từ khóa của bạn!</string>
+        <string name="add_set_to_folder_processing">Đang thêm bộ học vào thư mục...</string>
+        <string name="all_set_public">Các bộ học công cộng</string>
+        <string name="appearance">Giao diện</string>
+        <string name="level_up_with_q">Thăng cấp với Q+</string>
+        <string name="personal_info">Thông tin cá nhân</string>
+        <string name="username">Tên người dùng</string>
+        <string name="email">Email</string>
+        <string name="push_noti">Thông báo đẩy</string>
+        <string name="theme">Chủ đề</string>
+        <string name="system_default">Mặc định hệ thống</string>
+        <string name="privacy_policy">Chính sách quyền riêng tư</string>
+        <string name="term_service">Điều khoản dịch vụ</string>
+        <string name="changing_your_pass">Đang thay đổi mật khẩu của bạn...</string>
+        <string name="change_pass_successful">Thay đổi mật khẩu thành công</string>
+        <string name="save">Lưu</string>
+        <string name="cannot_empty_field">Không thể để trống trường này</string>
+        <string name="pass_not_equal_confirm">Mật khẩu mới không khớp với xác nhận mật khẩu</string>
+        <string name="current_pass_incorrect">Mật khẩu hiện tại không chính xác. Vui lòng thử lại!</string>
+        <string name="current_pass">Mật khẩu hiện tại</string>
+        <string name="new_pass">Mật khẩu mới</string>
+        <string name="confirm_pass">Xác nhận mật khẩu</string>
+        <string name="to_confirm_is_you">Để xác nhận rằng đó thực sự là bạn, vui lòng xác thực bằng mật khẩu Quizlet của bạn.</string>
+        <string name="password_is_not_correct">Mật khẩu bạn nhập không chính xác!</string>
+        <string name="change_email">Thay đổi địa chỉ email</string>
+        <string name="change_email_success">Thay đổi địa chỉ email thành công!</string>
+        <string name="default_n">Mặc định</string>
+        <string name="dark">Tối</string>
+        <string name="light">Sáng</string>
+        <string name="select_theme_mode">Chọn chế độ chủ đề</string>
+        <string name="dark_mode">Chế độ tối</string>
+        <string name="apply_theme">Áp dụng chủ đề</string>
+        <string name="are_u_sure_logout">Bạn có chắc chắn muốn đăng xuất khỏi tài khoản này không?</string>
+        <string name="confirm_logout">Đăng xuất tài khoản</string>
+        <string name="english">Tiếng Anh</string>
+        <string name="vietnamese">Tiếng Việt</string>
+        <string name="chinese">Tiếng Trung</string>
+        <string name="change_language">Thay đổi ngôn ngữ</string>
+        <string name="edit_set">Chỉnh sửa bộ học</string>
+        <string name="set_name_is_required">Tên bộ học không thể để trống!</string>
+        <string name="uncompleted">Chưa hoàn thành</string>
+        <string name="awarded">Đã nhận</string>
+        <string name="leader_board">Bảng xếp hạng</string>
+        <string name="rank_leader_board">Bảng xếp hạng Rank</string>
+        <string name="rank1">Rank 1</string>
+        <string name="your_results">Tổng kết quả</string>
+        <string name="total_incorrect_answer">Tổng số câu trả lời sai: </string>
+        <string name="total_correct_answer">Tổng số câu trả lời đúng:</string>
+        <string name="default_notification_channel_id">Noti_ID</string>
+        <string name="daily_reminder">Nhắc nhở hàng ngày</string>
+        <string name="remind_notification">Nhắc nhở bạn về điều gì đó quan trọng. Vào ứng dụng học thôi nào</string>
+        <string name="view_detail_leader_board">Xem chi tiết bảng xếp hạng</string>
+        <string name="view_detail">Xem chi tiết</string>
+        <string name="rank">Xếp hạng</string>
+        <string name="total_point">Tổng điểm</string>
+        <string name="no_folder_to_add">Không có thư mục để thêm. Bạn có thể tạo thư mục mới để thêm bộ này vào!</string>
+        <string name="no_set_to_add">Không có bộ học nào để thêm. Bạn có thể tạo mới để thêm vào bộ này!</string>
+        <string name="no_folder_add">Không tìm thấy thư mục để thêm</string>
+        <string name="download_excel">Đang tải tệp Excel</string>
+        <string name="download_in_progess">Đang tải xuống</string>
+        <string name="alert_import_title">Chú ý về chế độ nhập</string>
+        <string name="alert_import_desc">Ứng dụng này chỉ sẽ nhập dữ liệu trong cột đầu tiên và cột thứ hai trong bảng của bạn. Vui lòng định dạng dữ liệu trước khi nhập!</string>
+        <string name="translate_hint">Nhập đoạn văn để dịch</string>
+        <string name="translate_paragraph">Dịch đoạn văn</string>
+        <string name="quizlet_plus">QuizletPlus</string>
+        <string name="you_need_point_to_unlock">Bạn cần đạt được điểm cụ thể để mở khóa một số tính năng. Xem chi tiết bên dưới</string>
+        <string name="download_set">Tải xuống bộ học</string>
+        <string name="import_set">Nhập bộ học</string>
+        <string name="download_plus_detail">Bạn có thể tải xuống bộ học ở 2 định dạng xlxs và docx. Nó giúp bạn tổng hợp tất cả từ vựng trong bộ học thành một tệp</string>
+        <string name="import_plus_detail">Bạn có thể nhanh chóng thêm cặp thẻ ghi nhớ vào bộ học</string>
+        <string name="translate_plus_detail">Dịch đoạn văn</string>
+        <string name="view_detail_achievement">Xem chi tiết nhiệm vụ trong thành tựu</string>
+        <string name="download_required_point">5000</string>
+        <string name="import_required_point">3000</string>
+        <string name="translate_required_point">7000</string>
+        <string name="unlock_premium_features">Mở khóa tính năng cao cấp</string>
+        <string name="your_account_is_premium">Tài khoản của bạn là tài khoản cao cấp</string>
+        <string name="premium_account">Tài khoản cao cấp</string>
+        <string name="close">Đóng</string>
+        <string name="unlock_premium">Mở khóa Premium</string>
+        <string name="verified">Đã xác minh</string>
+        <string name="the_feature_will_coming_soon">Tính năng này sẽ sớm ra mắt</string>
+        <string name="premium_account_desc">Tài khoản của bạn là tài khoản cao cấp. Bạn có thể trải nghiệm tất cả các tính năng trong ứng dụng. Hãy học và nâng cao trí nhớ của bạn</string>
+        <string name="this_folder_empty">Thư mục này trống rỗng. Vui lòng thêm bộ vào thư mục trước khi thêm vào thư mục khác!</string>
+        <string name="there_no_folder_selected">Không có thư mục nào được chọn. Vui lòng chọn thư mục trước khi thêm vào bộ này</string>
+        <string name="there_no_set_selected">Không có bộ học nào được chọn. Vui lòng chọn bộ học trước khi thêm vào bộ này</string>
+        <string name="excellent_text">Có vẻ như bạn đã nắm vững kiến thức. Tiếp tục cố gắng đạt được thành tích!</string>
+        <string name="keep_trying_text">Công việc tuyệt vời! Bạn đã đạt được mức ổn định. Tiếp tục công việc tốt!</string>
+        <string name="too_bad_text">Thật tiếc! Hãy tiếp tục luyện tập để cải thiện hiệu suất của bạn.</string>
+        <string name="change_theme_success">Thay đổi chủ đề thành công</string>
+        <string name="resource_language">Ngôn ngữ nguồn</string>
+        <string name="target_language">Ngôn ngữ đích</string>
+        <string name="translate">Dịch</string>
+        <string name="please_type_text_to_translate">Vui lòng nhập văn bản để dịch</string>
+        <string name="please_wait_to_load_model">Vui lòng đợi để tải ngôn ngữ mô hình...</string>
+        <string name="there_no_text_to_speech">Không có văn bản để đọc</string>
+        <string name="there_no_text_to_copy">Không có văn bản để sao chép</string>
+        <string name="text_translated_will_here">Văn bản dịch sẽ ở đây</string>
+        <string name="default_translate">Nếu không chọn ngôn ngữ nguồn hoặc đích, văn bản sẽ được dịch mặc định với ngôn ngữ nguồn: Tiếng Anh, Ngôn ngữ đích: Tiếng Việt</string>
+        <string name="alert_import_word_desc">Bạn chỉ có thể nhập văn bản từ tệp .docx. Ứng dụng chỉ chấp nhận tệp word với định dạng đơn giản. Nó sẽ có lỗi với định dạng phức tạp</string>
+        <string name="alert_import_word_title">Nhập tệp .docx</string>
+        <string name="logging_in">Đang đăng nhập</string>
+        <string name="changing_your_email">Đổi địa chỉ email của bạn</string>
+        <string name="your_current_mail_concide">Email hiện tại của bạn và email mới trùng nhau. Hãy thử sử dụng email mới</string>
+        <string name="pass_and_new_pass_coincide">Mật khẩu hiện tại của bạn và mật khẩu mới trùng nhau. Hãy thử sử dụng mật khẩu mới</string>
+        <string name="back_press_again_to_out_app">Nhấn lại nút back để thoát ứng dụng</string>
+        <string name="you_can_translate_paragraph">Bạn có thể dịch từ hoặc đoạn văn nhanh chóng với bất kỳ ngôn ngữ nào khi sử dụng tính năng này</string>
+        <string name="there_error_when_import_file">Ôi. Có lỗi khi nhập tệp word. Vui lòng thử tệp khác</string>
+        <string name="there_error_when_import_excel_file">Ôi. Có lỗi khi nhập tệp. Vui lòng thử tệp khác</string>
+        <string name="sign_up_success">Đăng ký tài khoản thành công 🍾</string>
+        <string name="no_folder_created">Không có thư mục nào được tạo. Thư mục tạo sẽ ở đây</string>
+        <string name="create_new_set">Tạo bộ học mới</string>
+        <string name="username_signin">tên đăng nhập</string>
+        <string name="password_signin">mật khẩu</string>
+        <string name="enter_email_address">Nhập địa chỉ email</string>
+        <string name="username_or_email_adrr">Tên đăng nhập hoặc địa chỉ email</string>
+        <string name="click_tos">Nhấp vào Điều khoản Dịch vụ</string>
+        <string name="tos">Điều khoản Dịch vụ</string>
+        <string name="pp">Chính sách Riêng tư</string>
+        <string name="congratulations">Chúc mừng</string>
+        <string name="you_gained">Bạn đã đạt được</string>
+        <string name="day_streak">ngày liên tiếp</string>
+        <string name="changing_your_theme">Đang thay đổi giao diện của bạn…</string>
+        <string name="please_answer_all_question">Vui lòng trả lời tất cả các câu hỏi trước khi gửi</string>
+        <string name="please_choose_answer">Vui lòng chọn câu trả lời của bạn trước khi gửi</string>
+        <string name="sth_went_wrong_try_again">Có điều gì đó đã xảy ra. Vui lòng thử lại</string>
+        <string name="title_activity_view_image">XemHình</string>
+        <string name="quote">Trích dẫn</string>
+        <string name="language_quote">Ngôn ngữ của Trích dẫn</string>
+        <string name="you_can_get_quote">Bạn có thể đọc, tạo và quản lý các trích dẫn trong nhiều ngôn ngữ khác nhau</string>
+        <string name="create_quote">Tạo câu nói</string>
+        <string name="type_author">Nhập tác giả của câu nói</string>
+        <string name="type_content_quote">Nhập nội dung của câu nói</string>
+        <string name="my_quote">Câu nói của tôi</string>
+        <string name="there_no_quote">Không có câu nói nào trong thư viện câu nói của bạn</string>
+        <string name="create_new_quote">Tạo câu nói mới</string>
+        <string name="confirm_delete_quote">Bạn có chắc muốn xóa câu nói này không?</string>
+        <string name="creating_quote">Đang tạo câu nói…</string>
+        <string name="default_choose_target">Nếu ngôn ngữ đích chưa được chọn, văn bản sẽ được dịch sang tiếng Việt</string>
+        <string name="cannot_indentify_lan">Không thể xác định ngôn ngữ</string>
+        <string name="search_hint_quote">Tìm kiếm nội dung câu nói, tác giả</string>
+        <string name="add_to_your_quote_success">Thêm câu nói vào thư viện câu nói của bạn thành công</string>
+        <string name="view">Xem</string>
+        <string name="there_no_desc_for_this_folder">Không có mô tả cho thư mục này</string>
+
+
+
+
+
+
+
+
+        <string name="lorem_ipsum">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+</string>
+
+</resources>

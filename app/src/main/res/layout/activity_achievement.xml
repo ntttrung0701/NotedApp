@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile"
+    android:orientation="vertical"
+    tools:context=".Achievement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/Theme.AppQuizlet.PopupOverlay"
+            app:title="">
+
+            <ImageView
+                android:id="@+id/btcCloseAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_close_48" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/md"
+                android:text="@string/pf_achievement"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pad_20"
+            android:background="@color/my_azure"
+            app:cardCornerRadius="@dimen/pad_20">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="1.0">
+
+                <LinearLayout
+                    android:id="@+id/datePickerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDateFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/mar_10"
+                        android:fontFamily="cursive"
+                        android:paddingHorizontal="@dimen/md"
+                        android:text="@string/pf_achievement"
+                        android:textSize="@dimen/titleSizeCard" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:dividerInsetEnd="16dp"
+                        app:dividerInsetStart="16dp" />
+
+
+                    <!--                    <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                        android:id="@+id/rv_day_of_week"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_marginHorizontal="@dimen/pad_30"-->
+                    <!--                        android:padding="@dimen/mar_10" />-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginHorizontal="@dimen/pad_30"-->
+<!--                        android:layout_marginVertical="@dimen/pad_20"-->
+<!--                        android:paddingHorizontal="@dimen/pad_20"-->
+<!--                        app:cardBackgroundColor="@color/bg_card_achievement"-->
+<!--                        app:cardCornerRadius="@dimen/pad_20">-->
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:id="@+id/rvDate"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:padding="@dimen/mar_10" />-->
+<!--                    </androidx.cardview.widget.CardView>-->
+
+                </LinearLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/mar_15"
+                    app:dividerInsetEnd="16dp"
+                    app:dividerInsetStart="16dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/pad_30"
+                    android:layout_marginVertical="@dimen/pad_20"
+                    android:paddingHorizontal="@dimen/pad_20"
+                    app:cardCornerRadius="@dimen/pad_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/my_papaya"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/mar_10"
+                        android:paddingVertical="@dimen/mar_15">
+
+                        <TextView
+                            android:id="@+id/txtCurrentStreak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="@string/folder"
+                            android:textColor="@color/color_text_achievement_blue"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/fire_no_out"
+                            app:drawableStartCompat="@drawable/fire_no_out" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pad_20"
+            android:background="@color/my_azure"
+            app:cardCornerRadius="@dimen/pad_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_card_achievement_azure"
+                android:orientation="vertical"
+                android:padding="@dimen/mar_10">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAchievementStudy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnViewMoreLessStudy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="@dimen/pad_20"
+                    android:layout_marginBottom="@dimen/mar_15"
+                    android:background="@drawable/button_splash"
+                    android:paddingHorizontal="@dimen/pad_20"
+                    android:text="@string/view_more"
+                    android:textColor="@color/txt_white_in_btn" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pad_20"
+            app:cardCornerRadius="@dimen/pad_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/my_azure"
+                android:orientation="vertical"
+                android:padding="@dimen/mar_10">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAchievementStreak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnViewMoreLessStreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="@dimen/pad_20"
+                    android:layout_marginBottom="@dimen/mar_15"
+                    android:background="@drawable/button_splash"
+                    android:paddingHorizontal="@dimen/pad_20"
+                    android:text="@string/view_more"
+                    android:textColor="@color/txt_white_in_btn" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

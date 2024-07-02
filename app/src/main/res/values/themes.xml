@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="Base.Theme.AppQuizlet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--         <item name="colorPrimary">@color/my_alice_blue</item>-->
+
+    </style>
+
+    <style name="Theme.AppQuizlet" parent="Base.Theme.AppQuizlet">
+
+    </style>
+
+    <style name="Theme.AppQuizlet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppQuizlet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppQuizlet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Button_Primary">
+        <item name="background">@color/my_primary_color</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button_Plus">
+        <item name="background">@color/my_yellow</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottomsheet</item>
+        <item name="android:windowExitAnimation">@anim/slide_in_bottomsheet</item>
+    </style>
+
+    <style name="ScreenBackground">
+        <item name="background">@color/my_alice_blue</item>
+    </style>
+
+    <style name="ScreenBackgroundSecond">
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="CardBackground">
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">@color/black_gray</item>
+    </style>
+
+    <style name="txt_white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

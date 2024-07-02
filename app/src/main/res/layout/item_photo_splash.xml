@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/pad_20"
+    android:background="@color/bg_activity"
+    android:paddingRight="@dimen/pad_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="329dp"
+        android:background="@drawable/ddl_removebg_preview"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/dark" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Splash text"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="22sp">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

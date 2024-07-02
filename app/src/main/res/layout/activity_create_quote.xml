@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_azure"
+    tools:context=".CreateQuote">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_tab"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/Theme.AppQuizlet.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/mar_10"
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/mar_15"
+            android:text="@string/create_quote"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="@dimen/titleSize" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layoutAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/pad_20"
+        app:cardCornerRadius="@dimen/pad_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="@string/type_author"
+                android:paddingVertical="@dimen/mar_10"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAuthorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layoutTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_250"
+        android:layout_below="@+id/layoutAuthor"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/pad_20"
+        app:cardCornerRadius="@dimen/pad_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout11"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="@string/type_content_quote"
+                android:paddingVertical="@dimen/mar_10"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTypeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/linearLayout11" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="@dimen/mar_10">
+
+                <ImageView
+                    android:id="@+id/imgImport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/resource_import" />
+
+                <ImageView
+                    android:id="@+id/imgMic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/mic_24px" />
+
+                <TextView
+                    android:id="@+id/txtTargetLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/txt_black_primary"
+                    android:text="@string/target_language" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/mar_10"
+                    android:background="@color/black_gray" />
+
+                <TextView
+                    android:id="@+id/txtTranslate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/translate"
+                    android:textSize="@dimen/titleSize"
+                    app:drawableStartCompat="@drawable/translate" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/btnCreateQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTranslate"
+        android:layout_centerInParent="true"
+        android:background="@drawable/profile_upgrade_btn"
+        android:gravity="center"
+        android:paddingVertical="@dimen/mar_10"
+        android:text="@string/create_quote"
+        android:textColor="@color/my_gray" />
+
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Excellent">
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/layoutLearnedFull"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <com.airbnb.lottie.LottieAnimationView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="300dp"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:layout_marginTop="104dp"-->
+    <!--            app:lottie_autoPlay="true"-->
+    <!--            app:lottie_fileName="excellent.json"-->
+    <!--            app:lottie_loop="true" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:text="@string/good_job"-->
+    <!--            android:textColor="@color/txt_excellent_gray"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginHorizontal="@dimen/pad_30"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:textColor="@color/txt_excellent_gray"-->
+    <!--            android:text="@string/you_learn_all"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textSize="16sp" />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/btnGoHome"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:layout_marginVertical="@dimen/mar_10"-->
+    <!--            android:background="@drawable/button_primary"-->
+    <!--            android:text="@string/learn_other_set"-->
+    <!--            android:textColor="@color/txt_white_in_btn" />-->
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layoutLearnedFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/excellent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="104dp"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="excellent.json"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/tooBad"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="too_bad.json"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/keepTrying"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="104dp"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="keep_trying.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/your_results"
+            android:textColor="@color/txt_excellent_gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignItems="center"
+            app:justifyContent="space_around">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/mar_10"
+                android:gravity="center"
+                android:text="@string/total_correct_answer"
+                android:textColor="@color/txt_black_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTotalTrue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/mar_10"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/txt_black_primary"
+                android:textSize="14sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignItems="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/mar_10"
+                android:gravity="center"
+                android:text="@string/total_incorrect_answer"
+                android:textColor="@color/txt_black_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTotalFalse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/mar_10"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/txt_black_primary"
+                android:textSize="14sp" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.example.appquizlet.util.CustomProgressBar
+            android:id="@+id/customProgressBar"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/mar_30"
+            android:layout_marginVertical="@dimen/mar_15"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/txtExcellentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mar_10"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/pad_30"
+            android:text="@string/excellent_text"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtKeepTryingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mar_10"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/pad_30"
+            android:text="@string/keep_trying_text"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtTooBadText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mar_10"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/pad_30"
+            android:text="@string/too_bad_text"
+            android:textColor="@color/txt_black_primary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/mar_10"
+            android:background="@drawable/button_primary"
+            android:text="@string/learn_other_set"
+            android:textColor="@color/txt_white_in_btn" />
+    </LinearLayout>
+
+
+</LinearLayout>
